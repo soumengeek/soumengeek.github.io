@@ -1,0 +1,192 @@
+//banner section
+
+section.banner{
+    background:#e9e7fe url(../images/banner-top-right.png) right top no-repeat;
+}
+
+section.banner .content-box {
+    max-width: 585px;
+    padding-top: 15rem;
+}
+
+.banner h1{
+    @include heading-style($font-color: $clr-dark-blue, $font-size: 4.8rem, $font-weight: bold, $all-margin: 0 0 3rem 0 );
+}
+
+.banner p{
+    @include heading-style($font-color: $clr-black-dark, $font-size: 1.6rem, $font-weight: normal, $all-margin: 0 0 1.5rem 0 );
+}
+
+.banner .btn-wrap a{
+    margin: 7rem 0;
+}
+
+.banner .left-line:before {
+  top: 14px;
+}
+
+
+//About section
+.about{
+ position: relative;
+}
+
+.about::before {
+  content: "";
+  display: inline-block;
+  background: url(../images/my-photo.png) left top no-repeat;
+  background-size: contain;
+  width: 509px;
+  height: 737px;
+  position: absolute;
+  left: 0;
+  top: -100px;
+  z-index: -1;
+}
+
+.about::after {
+  content: "";
+  display: inline-block;
+  background: url(../images/right-bg-img.png) right bottom no-repeat;
+  background-size: contain;
+  width: 214px;
+  height: 508px;
+  position: absolute;
+  right: 0;
+  bottom:-200px;
+}
+
+.d-inline-block p {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.d-inline-block p:last-child {
+    max-width: 80%;
+}
+
+.about .btn-wrap{
+    margin-top: 5rem;
+    margin-right: 3rem;
+}
+
+.about .btn-wrap:last-child{
+    margin-right: 0;
+}
+
+
+
+//Portfolio section
+
+.portfolio-sec .d-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    grid-template-rows: 300px 90px 212px 90px 300px; 
+}
+
+.portfolio-sec .d-grid .image-box{
+    overflow: hidden;
+}
+
+.portfolio-sec .d-grid .image-box:nth-child(1){
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+
+.portfolio-sec .d-grid .image-box:nth-child(3){
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+
+  }
+
+  .portfolio-sec .d-grid .image-box:nth-child(4){
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: span 2;
+  }
+
+  .portfolio-sec .d-grid .image-box:nth-child(5){
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+  }
+
+  .portfolio-sec .d-grid .image-box:nth-child(6){
+    grid-column-start: 3;
+    grid-row-start: 3;
+    grid-row-end: span 2;
+  }
+
+  .portfolio-sec .d-grid .image-box:nth-child(7){
+    grid-column-start: 1;
+    grid-row-start: 5;
+  }
+
+  .portfolio-sec .d-grid .image-box:nth-child(8){
+    grid-column-start: 2;
+    grid-row-start: 4;
+    grid-row-end: span 2;
+    background: #fb0051;
+    color: $clr-white-light;
+    padding: 1.5rem;
+  }
+
+  .portfolio-sec .d-grid .image-box:nth-child(9){
+    grid-column-start: 3;
+    grid-row-start: 5;
+  }
+
+  .portfolio-sec .d-grid .image-box a{
+    color: $clr-white-light;
+    display: block;
+  }
+
+  .portfolio-sec .d-grid .image-box a h2{
+    @include heading-style($font-color: $clr-white-light, $font-size: 6rem, $font-weight: normal, $all-margin: 5rem 0 5rem 0 );
+  }
+
+
+.contact-section {
+   
+}
+
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    background: $clr-dark-blue;
+    border: none;
+    border-radius: 0.7rem;
+    margin-bottom: 1.5rem;
+}
+
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=tel]::placeholder,
+textarea::placeholder {
+    font-size: 1.8rem;
+    color: $clr-white-light;
+    font-weight: normal;
+}
+
+input[type="submit"] {
+    text-transform: uppercase;
+    background: $clr-green;
+    color: $clr-white-light;
+    @include button-round($all-margin: 0 0 0 0, $all-padding: 1.5rem 3rem 1.5rem 3rem );
+    border: none;
+}
+
+.contact-section .cont-form {
+    padding: 8rem 1.5rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px dashed $clr-dark-blue;;
+}

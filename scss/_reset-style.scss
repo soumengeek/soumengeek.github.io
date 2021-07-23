@@ -1,0 +1,132 @@
+html{
+    font-size: 62.5%;
+}
+
+body {
+  @include basic-font-style;
+}
+
+p:empty,
+pre:empty {
+    display: none;
+}
+
+
+
+p,
+ul,
+ol {
+    font-family: $font-work;
+    font-weight: normal;
+    color: var(--clr-gray-line);
+    font-size: 1.6rem;
+    letter-spacing: normal;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+p:only-child, p:last-child {
+    margin-bottom: 0;
+}
+
+.icon-size-16 {
+    width: 1.6rem;
+    margin-left: 0.5rem;
+}
+
+
+
+/* global style */
+
+a* {
+    text-decoration: none;
+    transition: all 0.3s;
+    box-shadow: none !important;
+}
+
+a:focus,
+a:hover {
+    outline: none;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    /*   color: #74c044 !important; */
+}
+
+a:hover {
+    color: var(--clr-orange);
+}
+
+.green{
+    background: $clr-green ;
+}
+
+.yellow{
+    background: $clr-yellow ;
+}
+
+.btn-wrap a {
+    @include button-round($all-margin: 0 0 0 0, $all-padding: 1.8rem 3rem 1.8rem 3rem );
+}
+
+.roundBtn:hover {
+    background: var(--clr-orange-dark);
+    color: var(--clr-white-light);
+}
+
+.resetStyle {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
+.p-bottom-7{
+    padding-bottom: 7rem;
+}
+
+.p-top-bottom-7{
+    padding: 7rem 0;
+}
+
+.p-bottom-3{
+    padding-bottom: 3rem;
+}
+
+
+.heading.normal-st.font-small{
+    @include heading-style($font-color: $clr-dark-blue, $font-size: 2.2rem, $font-weight: 600, $all-margin: 0 0 2rem 0 );
+}
+
+.heading.bold-st.font-big{
+    @include heading-style($font-color: $clr-dark-blue, $font-size: 4.8rem, $font-weight: 700, $all-margin: 0 0 3rem 0 );
+}
+
+.left-line{
+    position: relative;
+}
+
+.left-line:before {
+    content: "";
+    display: inline-block;
+    width: 150px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    left: -160px;
+    top: 30px;
+}
+
+p.small-bold{
+    font-size: 1.8rem !important;
+    font-weight: 600 !important;
+}

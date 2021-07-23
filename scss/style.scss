@@ -1,0 +1,19 @@
+
+//Bootstrap Start
+$body-bg: #fff;
+$body-color: #444444;
+
+$theme-colors: (
+  "primary": #00c9c3,
+  "danger": #ff4136
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+//Bootstrap End
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "reset-style";
+@import "header";
+@import "footer";
+@import "home";

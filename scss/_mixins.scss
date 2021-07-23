@@ -1,0 +1,25 @@
+@mixin basic-font-style($font-color: $clr-gray, $font-size: 1.6rem, $font-weight: normal ) {
+    font-family: $font-work;
+    color: $font-color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+  }
+
+  @mixin heading-style($font-color: $clr-dark-blue, $font-size: 1.6rem, $font-weight: normal, $all-margin: 0 0 3rem 0 ) {
+    font-family: $font-work;
+    color: $font-color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    margin: $all-margin;
+  }
+
+  @mixin button-round($all-margin: 0 0 0 0, $all-padding: 0 0 0 0 ) {
+    font-family: $font-work;
+    color: $clr-white-light;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: $all-margin;
+    padding: $all-padding;
+    border-radius: 3px;
+    display: inline-block;
+  }

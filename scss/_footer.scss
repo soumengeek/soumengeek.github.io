@@ -1,0 +1,40 @@
+
+footer {
+    background: url(../images/footer-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    li {
+        padding-right: 16px;
+        font-size: 2.2rem;
+        color: $clr-white-light;
+    }
+
+    li:after {
+        content: "|";
+        display: inline-block;
+        padding-left: 1.6rem;
+        font-size: 11px;
+    }
+
+    li:last-child:after {
+        display: none;
+    }
+}
+
+footer .copy-right p {
+    text-align: center;
+    font-size: 1.8rem;
+    padding-bottom: 3rem;
+    color: #ccc;
+}

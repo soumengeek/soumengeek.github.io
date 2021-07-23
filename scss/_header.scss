@@ -1,0 +1,20 @@
+.navbar-brand{
+    margin-right: 8rem;
+}
+
+.fixed-top {
+    position: absolute;
+}
+
+nav{
+    li{
+        margin-right: 0.8rem;
+        &:last-child{
+            margin-right: 0;
+        }
+        a{
+            color: $clr-black-dark;
+            font-weight: 600;
+        }
+    }
+}
