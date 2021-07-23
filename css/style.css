@@ -10198,6 +10198,7 @@ textarea {
   border: none;
   border-radius: 0.7rem;
   margin-bottom: 1.5rem;
+  color: #fff;
 }
 
 input[type=text]::placeholder,
