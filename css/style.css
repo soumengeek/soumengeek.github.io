@@ -10215,6 +10215,10 @@ textarea::placeholder {
   font-weight: normal;
 }
 
+.recaptcha-wrap .g-recaptcha > div {
+  margin: auto !important;
+}
+
 button[type="submit"] {
   text-transform: uppercase;
   background: #00c9c3;
