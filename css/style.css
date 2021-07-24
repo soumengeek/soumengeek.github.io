@@ -10215,7 +10215,7 @@ textarea::placeholder {
   font-weight: normal;
 }
 
-input[type="submit"] {
+button[type="submit"] {
   text-transform: uppercase;
   background: #00c9c3;
   color: #fff;

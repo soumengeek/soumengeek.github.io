@@ -176,7 +176,7 @@ textarea::placeholder {
     font-weight: normal;
 }
 
-input[type="submit"] {
+button[type="submit"] {
     text-transform: uppercase;
     background: $clr-green;
     color: $clr-white-light;
