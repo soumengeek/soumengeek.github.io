@@ -54,6 +54,7 @@ section.banner .content-box {
   position: absolute;
   right: 0;
   bottom:-200px;
+  z-index: -1;
 }
 
 .d-inline-block p {

@@ -1,0 +1,36 @@
+@media only screen and (max-width: 1366px){
+    .portfolio-sec .d-grid {
+        grid-template-columns: repeat(3, 370px);
+    }
+
+    section.banner {
+        background-size: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 1200px){
+    .container{
+        max-width: 95%;
+    }
+    .what-section .d-flex.justify-content-between{
+        flex-wrap: wrap;
+        justify-content: flex-start !important;
+        .info-box{
+            margin-bottom: 1.5rem;
+            margin-right: 1.5rem;
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+
+    .portfolio-sec .d-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 991px){
+
+}

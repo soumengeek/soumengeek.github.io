@@ -9830,7 +9830,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*  $clr-blue-gradient: linear-gradient(90deg, rgba(81, 29, 229, 1) 0%, rgba(9, 144, 252, 1) 100%); */
-html {
+:root {
   font-size: 62.5%;
 }
 
@@ -9939,6 +9939,10 @@ h6 {
   padding-bottom: 3rem;
 }
 
+.m-bottom-2 {
+  margin-bottom: 2rem;
+}
+
 .heading.normal-st.font-small {
   font-family: "Work Sans", sans-serif;
   color: #00305b;
@@ -9952,7 +9956,7 @@ h6 {
   color: #00305b;
   font-size: 4.8rem;
   font-weight: 700;
-  margin: 0 0 3rem 0;
+  margin: 0 0 2rem 0;
 }
 
 .left-line {
@@ -10096,6 +10100,7 @@ section.banner .content-box {
   position: absolute;
   right: 0;
   bottom: -200px;
+  z-index: -1;
 }
 
 .d-inline-block p {
@@ -10232,5 +10237,34 @@ input[type="submit"] {
 input:focus,
 textarea:focus {
   outline: 2px dashed #00305b;
+}
+
+@media only screen and (max-width: 1366px) {
+  .portfolio-sec .d-grid {
+    grid-template-columns: repeat(3, 370px);
+  }
+  section.banner {
+    background-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 95%;
+  }
+  .what-section .d-flex.justify-content-between {
+    flex-wrap: wrap;
+    justify-content: flex-start !important;
+  }
+  .what-section .d-flex.justify-content-between .info-box {
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .what-section .d-flex.justify-content-between .info-box:last-child {
+    margin-right: 0;
+  }
+  .portfolio-sec .d-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 /*# sourceMappingURL=style.css.map */

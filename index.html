@@ -4,10 +4,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="generator" content="">
-    <title>Soumen Geek</title>
+    <meta name="description" content="My name is Soumen Sardar and I am a Front-end Developer, living in Kolkata.">
+    <meta name="keywords" content="Soumen Sardar, Let's build something together!">
+    <title>Soumen Sardar | Portfolio</title>
     <!-- Bootstrap core CSS -->
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -90,7 +89,7 @@
       <section class="portfolio-sec">
         <div class="container">
           <h2 class="heading bold-st font-big text-center">Portfolio</h2>
-          <p class="text-center">Recent Projects: Samples of some of my work from the past year.</p>
+          <p class="text-center m-bottom-2">Recent Projects: Samples of some of my work from the past year.</p>
           <div class="d-grid">
             <div class="image-box"><a href="#"><img alt="Ilovemyoffers" src="images/ilovemyoffers.jpg"></a></div>
             <div class="image-box"><a href="#"><img alt="Smarttraffic" src="images/smarttraffic.jpg"></a></div>
@@ -109,18 +108,19 @@
       <section id="contact" class="contact-section">
         <div class="container cont-form">
             <h2 class="heading bold-st font-big text-center">Contact me</h2>
-            <form class="" action="https://formspree.io/soumen.wad@gmail.com" method="POST">
+            <p class="text-center m-bottom-2">Let's build something together! Or <a href="mailto:soumen.wad@gmail.com">email</a> & <a href="tel:7602550764">call</a> me if you have any other questions.</p>
+            <form class="" netlify-honeypot="bot-field" data-netlify-recaptcha="true" name="contact" method="POST" data-netlify="true">
                 <div class="row mg-bottom30 ">
                     <div class="col-md-6">
                         <input type="text" name="name" placeholder="Name">
                     </div>
                     <div class="col-md-6">
-                        <input type="text" name="company" placeholder="Company">
+                        <input type="text" name="Company" placeholder="Company">
                     </div>
                 </div>
                 <div class="row mg-bottom30 ">
                     <div class="col-md-6">
-                        <input type="email" name="_replyto" placeholder="Email Address">
+                        <input type="email" name="email" placeholder="Email Address">
                     </div>
                     <div class="col-md-6">
                         <input type="tel" name="telephone" placeholder="Phone Number">
@@ -133,7 +133,8 @@
                 </div>
                 <div class="row mg-bottom30 text-center ">
                     <div class="col-md-12">
-                        <input type="submit" value="submit">
+                      <div data-netlify-recaptcha="true"></div>
+                        <button type="submit">submit</button>
                     </div>
                 </div>
             </form>
